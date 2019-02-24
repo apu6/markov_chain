@@ -37,11 +37,6 @@ for token in doc:
     elif token.pos_ == "DET":
         articles.append(token)
 
-# print(nlp("in")[0].pos_)
-# print(preps)
-# print(articles)
-
-# print(nouns)
 @app.route('/', methods=['POST', 'GET'])
 def generate():
     if request.method == 'POST':
@@ -57,16 +52,13 @@ def generate():
 
         first_line = gen_first_line(r_noun, r_verb, r_adj, r_adv, r_prep)
         second_line = gen_line()
-        print(second_line)
         third_line = gen_line()
-        print(third_line)
         fourth_line = gen_line()
-        print(fourth_line)
-        poem = '\n'.join([first_line, second_line,third_line,fourth_line])
-        return poem
+
+        return render_template('poem.html', first = first_line, second = second_line, third = third_line, fourth = fourth_line)
 
     if request.method == 'GET':
-        return render_template('main.html')
+        return render_template('form.html')
 
 def gen_match(target, pos):
     max = -math.inf

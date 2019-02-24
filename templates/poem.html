@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block header %}
+    <h1>{% block title %}Poem{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <p>{{ first }}</p>
+    <p>{{ second }}</p>
+    <p>{{ third }}</p>
+    <p>{{ fourth }}</p>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block header %}
+    <h1>{% block title %}Form{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/">
+    Noun:
+    <textarea name="noun"></textarea>
+    Adjective:
+    <textarea name="adj"></textarea>
+    Verb:
+    <textarea name="verb"></textarea>
+    Adverb:
+    <textarea name="adv"></textarea>
+    Preposition:
+    <textarea name="prep"></textarea>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
