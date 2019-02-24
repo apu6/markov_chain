@@ -40,7 +40,6 @@ for token in doc:
 @app.route('/', methods=['POST', 'GET'])
 def generate():
     if request.method == 'POST':
-        # req = request.get_json()
         r_adj = request.form["adj"]
         r_verb = request.form["verb"]
         r_noun = request.form["noun"]
