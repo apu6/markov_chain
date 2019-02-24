@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/amypu/Documents/GitHub/poem_gen/venv"
+VIRTUAL_ENV="/Users/amypu/Documents/GitHub/litr0310l/poem_gen/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
