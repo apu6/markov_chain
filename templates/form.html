@@ -1,4 +1,6 @@
 {% extends 'main.html' %}
+<link rel="stylesheet" href="../css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Codystar:300,400|Quicksand" rel="stylesheet">
 
 {% block header %}
     <h1>{% block title %}Form{% endblock %}</h1>
@@ -6,16 +8,14 @@
 
 {% block content %}
 <form method="POST" action="/">
-    Noun:
-    <textarea name="noun"></textarea>
-    Adjective:
-    <textarea name="adj"></textarea>
-    Verb:
-    <textarea name="verb"></textarea>
-    Adverb:
-    <textarea name="adv"></textarea>
-    Preposition:
-    <textarea name="prep"></textarea>
-    <button type="submit">Submit</button>
+    <div>
+        Input here:
+        <div>
+            <textarea name="input"></textarea>
+        </div>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
 </form>
 {% endblock %}

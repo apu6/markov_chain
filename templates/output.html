@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block header %}
+    <h1>{% block title %}Markov it!{% endblock %}</h1>
+    <link rel="stylesheet" href="../css/main.css">
+{% endblock %}
+
+<div class="wrapper">
+    <div class="section">
+        <div class="content" style="margin: auto">
+        {% block content %}
+            <p>{{ output }}</p>
+        {% endblock %}
+        </div>
+    </div>
+</div>
