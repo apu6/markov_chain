@@ -1,21 +1,28 @@
 {% extends 'main.html' %}
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
 <link href="https://fonts.googleapis.com/css?family=Codystar:300,400|Quicksand" rel="stylesheet">
 
-{% block header %}
-    <h1>{% block title %}Form{% endblock %}</h1>
-{% endblock %}
 
+{% block header %}
+    <h1>{% block title %}Enter at least two words here{% endblock %}</h1>
+{% endblock %}
 {% block content %}
-<form method="POST" action="/">
-    <div>
-        Input here:
-        <div>
-            <textarea name="input"></textarea>
+<div class="wrapper">
+    <div class="section">
+        <div class="content">
+            <form method="POST" action="/">
+                <div>
+                    Input here:
+                    <div>
+                        <textarea name="input"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
-    <div>
-        <button type="submit">Submit</button>
-    </div>
-</form>
+</div>
 {% endblock %}
+

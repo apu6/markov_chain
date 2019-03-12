@@ -4,9 +4,9 @@
   <head>
     <!-- define character set in use -->
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}Poem Generator</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Codystar:300,400|Quicksand" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
   </head>
   <!-- Body contains the page content -->
     {% block header %}{% endblock %}
@@ -15,3 +15,4 @@
   </body>
 
 </html>
+

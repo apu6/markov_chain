@@ -7,36 +7,17 @@ body {
   --light-grey-color: #F8F8F8;
   --mid-grey-color: #E5E5E5;
   font-family: 'Quicksand';
-  color: white;
 }
 
 .section {
-  width: 100%;
-  height: auto;
-  /* min-height: 560px; */
-  /* background-color: var(--background-color); */
-  background-image: url('../images/background-gradient.png'); 
-  background-position: center; 
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: auto; 
   min-height: 700px;
   position: relative;
   background-size: cover;
   display: flex; 
-}
-
-.section.ac {
-  background-image: none;
-  color: black;
-}
-
-.section.bacon {
-  background-image: none;
-  color: black;
-}
-
-.navbar {
-  justify-content: left;
-  margin-left: 5%;
-  margin-top: 2%;
 }
 
 .content {
@@ -47,6 +28,9 @@ body {
 h1 {
   font-family: 'Codystar';
   font-size: 50px;
+  width: 80%; 
+  margin-left: 10%; 
+  margin-right: 10%;
 }
 
 p, ul, li, a {
